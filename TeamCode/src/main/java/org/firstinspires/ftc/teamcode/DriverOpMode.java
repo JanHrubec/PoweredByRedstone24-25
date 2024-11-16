@@ -112,7 +112,7 @@ public class DriverOpMode extends OpMode {
 
         // Claw
         if(gamepad2.dpad_left){
-            clawVal = 0.7;
+            clawVal = 0.8;
         }
         else if(gamepad2.dpad_right){
             clawVal = 0.2;
