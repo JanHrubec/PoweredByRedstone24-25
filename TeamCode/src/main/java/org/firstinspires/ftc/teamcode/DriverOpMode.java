@@ -21,6 +21,8 @@ public class DriverOpMode extends OpMode {
 
     double deadzone = 0.05;
 
+    double clawVal = 0.5;
+
 
     @Override
     public void init() {
@@ -109,21 +111,20 @@ public class DriverOpMode extends OpMode {
         }
 
         // Claw
-        double clawVal = 0.5;
         if(gamepad2.dpad_left){
-            clawVal = 0.6;
+            clawVal = 0.7;
         }
         else if(gamepad2.dpad_right){
-            clawVal = 0.4;
+            clawVal = 0.2;
         }
         clawServo.setPosition(clawVal);
 
         double clawRotVal = 0.5;
         if(gamepad2.dpad_down){
-            clawRotVal = 0.6;
+            clawRotVal = 0.7;
         }
         else if(gamepad2.dpad_up){
-            clawRotVal = 0.4;
+            clawRotVal = 0.3;
         }
         clawRotServo.setPosition(clawRotVal);
 
